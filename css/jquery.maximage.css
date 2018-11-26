@@ -1,0 +1,136 @@
+/*	----------------------------------------------------------------
+	MaxCycle (Fullscreen Slideshow for use with jQuery Cycle Plugin)
+	----------------------------------------------------------------
+	
+	Demo at: http://www.aaronvanderzwan.com/maxcycle/
+	Download and Info at: http://github.com/akv2/MaxCycle---jQuery-Plugin/
+	Copyright (c) 2007-2011 Aaron Vanderzwan
+	Dual licensed under the MIT and GPL licenses.
+	
+*/
+/*! Version: 2.0.73 (12-Oct-2012) */
+
+
+.mc-hide-scrolls{
+	overflow:hidden;
+}
+
+body .mc-cycle {
+	height:100%;
+	left:0;
+	overflow:hidden;
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:-1;
+}
+
+div.mc-image {
+	/*NOTE: Mozilla flickers when fading and using 'all', so we have to be specific with what property we want to transition:
+	 	If you are using fading transitions, use 'opacity: */
+	-webkit-transition: opacity 4s ease-in-out; 
+	-moz-transition: opacity 4s ease-in-out; 
+	-o-transition: opacity 4s ease-in-out; 
+	transition: opacity 4s ease-in-out;
+	
+	/*If you are using horizontal slide transitions, use the following CSS:
+	-webkit-transition: left 1s ease-in-out; 
+	-moz-transition: left 1s ease-in-out; 
+	-o-transition: left 1s ease-in-out; 
+	transition: left 1s ease-in-out;*/
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:100%;
+	overflow:hidden;
+	width:100%;
+}
+
+.mc-old-browser .mc-image {
+	overflow:hidden;
+}
+
+#cycle-loader {
+				height:32px;
+				left:50%;
+				margin:-8px 0 0 -8px;
+				position:absolute;
+				top:50%;
+				width:32px;
+				z-index:999;
+			}
+			
+			/*I want to avoid jumpiness as the JS loads, so I initially hide my cycle*/
+			#maximage {
+				display:none;/* Only use this if you fade it in again after the images load */
+				position:fixed !important;
+			}
+			
+			/*Set my gradient above all images*/
+			#gradient {
+				left:0;
+				height:100%;
+				position:absolute;
+				top:0;
+				width:100%;
+				z-index:999;
+			}
+			
+			/*Set my logo in bottom left*/
+			#logo {
+				bottom:30px;
+				height:auto;
+				left:30px;
+				position:absolute;
+				width:34%;
+				z-index:1000;
+			}
+			#logo img {
+				width:100%;
+			}
+			
+			#arrow_left, #arrow_right {
+				bottom:30px;
+				height:67px;
+				position:absolute;
+				right:30px;
+				width:36px;
+				z-index:1000;
+			}
+			#arrow_left {
+				right:86px;
+			}
+			
+			#arrow_left:hover, #arrow_right:hover {
+				bottom:29px;
+			}
+			#arrow_left:active, #arrow_right:active {
+				bottom:28px;
+			}
+			
+			a {color:#666;text-decoration:none;}
+			a:hover {text-decoration:underline;}
+			
+			.in-slide-content { 
+				float:right;
+				font-size:60px;
+				font-weight:bold;
+				right:0;
+				margin:40px;
+				padding:20px;
+				position:absolute;
+				top:0;
+				width:700px;
+				z-index:9999; /* Show above .gradient */ 
+			}
+			/*.light-text {color:#ddd;text-shadow: 0 1px 0 #666;}
+			.smaller-text {font-size:30px;}
+			.youtube-video, video {
+				left:0;
+				position:absolute;
+				top:0;
+			}*/

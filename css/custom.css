@@ -1,0 +1,61 @@
+
+@media (min-width: 992px) and (max-width: 1199px)
+{
+
+
+
+}
+
+@media screen and (max-width: 1366px) , screen and (max-height: 768px) 
+{
+	.Login { margin-bottom:30px;}
+}
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+	.Login { margin:0 0 0px 0;}
+	
+	#mainImageBox #subNavBox .sNavWrap { width:240px;}
+	#mainImageBox #subNavBox .sNavWrap a { font-size:14px;}
+	#mainImageBox #subNavBox .sNavWrap a span { padding:0 10px; margin:0 10px 0 0}
+
+}
+
+@media only screen and (max-width: 767px) 
+{
+	.Login { margin-bottom:80px;}
+	.OncologyConsults { margin:0 auto 100px; float:none;}
+	.OncologyConsults h2 { font-size:45px;}
+	
+	/*#mainImageBox { width:300px;}
+	#mainImageBox #subNavBox .sNavWrap { width:239px; position:static;}
+	.sHead { float: left; width: 239px;}
+	#mainImageBox #subNavBox .sNavWrap a span { padding:0 14px; margin:0 10px 0 0}*/
+	
+	
+	.FtrBg { font-size:13px; margin-top:50px;}
+	.FtrBg ul li { margin:0 0 0 10px;}
+
+}
+
+@media only screen and (max-width: 479px) 
+{
+	.Login { margin-bottom:15px;}
+	.OncologyConsults { margin-bottom:30px;}
+	.OncologyConsults h2 { font-size:29px;}
+	.OncologyConsults h3 { font-size:14px; padding:0; text-align:center;}
+	.accordion_head { font-size:13px; height:45px; line-height:45px;}
+	.accordion_head small { margin:0 10px 0 0; padding:0 10px;}
+	.AccordianNavInnr ul li a { height:30px; line-height:30px; font-size:13px;}
+	.FtrBg { margin-top:84px !important;}
+	.FtrBg span { margin-bottom:8px;}
+	.FtrBg ul { float:left}
+
+}
+
+@media screen and (max-width: 375px) , screen and (max-height: 667px) 
+{
+	.FtrBg { margin-top:271px}
+	
+}
+

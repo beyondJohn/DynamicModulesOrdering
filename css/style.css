@@ -1,0 +1,466 @@
+.text-position{
+    width:10%;
+    margin-left: 25px;
+}
+label{
+    color: #063587;
+}
+.text-expiration{
+    width:89%;
+    margin-left: 25px;
+}
+.text-faculty{
+    width: 89%;
+    margin: 0 25px;
+    position: relative;
+    max-width: 89%;
+    min-width: 89%;
+    height:60px;
+}
+.text-credits{
+    width:89%;
+    margin-left: 25px;
+}
+.text-description{
+    width: 89%;
+    margin: 0 25px;
+    position: relative;
+    max-width: 89%;
+    min-width: 89%;
+    height:60px;
+}
+.text-href{
+    width: 89%;
+    margin: 0 25px;
+    position: relative;
+    max-width: 89%;
+    min-width: 89%;
+    height:60px;
+}
+.form-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    min-width: 89%;
+}
+
+.text-title {
+    width: 89%;
+    margin: 0 25px;
+    position: relative;
+    max-width: 89%;
+    min-width: 89%;
+    height:60px;
+}
+
+.div-footer {
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    margin: 25px;
+}
+
+.div-modal-container {
+    -webkit-transition: top .5s;
+    /* Safari */
+    transition: top .5s;
+    position: absolute;
+    margin: 0;
+    background-size: cover;
+    z-index: 3;
+    width: 100%;
+    height: 75%;
+    top: -150%;
+    bottom: 0;
+    opacity: .9;
+}
+
+.div-modal {
+    position: relative;
+    margin: auto;
+    background: #fff;
+    background-size: cover;
+    z-index: 3;
+    width: 80%;
+    height: 100%;
+    opacity: 1;
+    border-radius: 20px;
+}
+
+.div-mask {
+    -webkit-transition: opacity .5s;
+    /* Safari */
+    transition: opacity .5s;
+    position: fixed;
+    margin: 0;
+    background-color: #999999;
+    background-size: cover;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+}
+
+body {
+    margin: 0px auto;
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding: 30px 0 0 0;
+}
+
+header, section, footer {
+    float: left;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: normal;
+    text-transform: none;
+    line-height: normal
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    transition: all 0.4s ease-in-out 0s;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333333; */
+}
+
+.my-top-nav {
+    background-color: #ab0d0c;
+    border-color: #080808;
+}
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+    display: none;
+}
+
+.Login {
+    width: 100%;
+    float: left;
+    margin-bottom: 200px;
+}
+
+.Login a {
+    height: 32px;
+    line-height: 31px;
+    padding: 0 19px;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    float: right;
+    text-decoration: none;
+}
+
+.Login a:hover {
+    background: #ab0d0c;
+    color: #fff;
+}
+
+.OcMain {
+    max-width: 890px;
+    margin: 0 auto;
+}
+
+.OncologyConsults {
+    max-width: 545px;
+    width: 100%;
+    float: left;
+    background: rgba(249, 249, 248, 0.6);
+    padding: 3px 13px 15px;
+    margin: 0 0 0 0px;
+}
+
+.OncologyConsults h2 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #910202;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+.OncologyConsults h3 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+    padding: 0 0 0 16px;
+}
+
+.FtrBg {
+    background: #111010;
+    width: 100%;
+    float: left;
+    padding: 10px 0px 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.FtrBg span {
+    color: #999999;
+    float: left;
+}
+
+.FtrBg ul {
+    float: right;
+}
+
+.FtrBg ul li {
+    float: left;
+    margin: 0 0 0 58px;
+}
+
+.FtrBg ul li a {
+    color: #999999;
+}
+
+.FtrBg ul li:first-child {
+    margin: 0;
+}
+
+.OC_Nav {
+    width: 100%;
+    float: left;
+}
+
+#mainImageBox {
+    position: relative;
+    max-width: 890px;
+    margin: 0 auto;
+}
+
+#mainImageBox #subNavBox {
+    /*position:absolute;z-index:200;top:1px;left:1px;*/
+}
+
+#mainImageBox #subNavBox .sNavWrap {
+    float: left;
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    top: 269px;
+    width: 296px;
+    border-right: 1px solid transparent;
+}
+
+#mainImageBox #subNavBox .sNavWrap a {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+    display: block;
+    height: 59px;
+    line-height: 59px;
+    background-color: rgba(243, 242, 240, 0.6);
+}
+
+#mainImageBox #subNavBox .sNavWrap a:hover
+/*, #mainImageBox #subNavBox .sNavWrap a.active */
+
+    {
+    background: #ab0d0c;
+    color: #fff;
+}
+
+#mainImageBox #subNavBox .sNavWrap a span {
+    float: left;
+    margin: 0px 30px 0px 0px;
+    padding: 0 19px;
+    border-right: 1px solid #8d1212;
+}
+
+#mainImageBox #subNavBox .sNavWrap a span img {
+    opacity: 1 !important;
+}
+
+#mainImageBox #subNavBox .sNavWrap .sSub {
+    margin: 0;
+    padding: 0;
+}
+
+#mainImageBox #subNavBox .sNavWrap .sSub a {
+    display: block;
+    margin: 0;
+    padding: 0 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    height: 39px;
+    line-height: 39px;
+    border-top: 1px solid #fff;
+    background: #ab0d0c;
+}
+
+#mainImageBox #subNavBox .sNavWrap .sSub a:hover {
+    color: #540f0f;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+/* Accordian Styling Start */
+
+.Acc_Main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.accordion_container {
+    padding: 0px;
+    margin: 0 0 100px;
+    background-color: rgba(243, 242, 240, 0.6);
+    color: #fff;
+}
+
+.AcrdLst {
+    border-bottom: 1px solid #ab0d0c;
+}
+
+.AcrdLst:last-child {
+    border-bottom: 0px;
+}
+
+.accordion_head {
+    border: 0;
+    padding: 0 10px;
+    margin: 0;
+    height: 59px;
+    line-height: 59px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #333333;
+    font-size: 16px;
+}
+
+.accordion_head small {
+    float: left;
+    margin: 0px 30px 0px 0px;
+    padding: 0 19px;
+    border-right: 1px solid #ab0d0c;
+}
+
+.accordion_body {
+    background: #ab0d0c;
+    padding: 0;
+}
+
+.AccordianNavInnr {
+    width: 100%;
+    float: left;
+}
+
+.AccordianNavInnr ul {}
+
+.AccordianNavInnr ul li {}
+
+.AccordianNavInnr ul li a {
+    height: 39px;
+    line-height: 39px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    border-top: 1px solid #fff;
+    display: block;
+    padding: 0 20px;
+}
+
+.AccordianNavInnr ul li a:hover {
+    color: #ab0d0c;
+}
+
+.plusminus {
+    display: none;
+}
+
+/* Accordian Styling Close */
+
+;
